@@ -5,6 +5,10 @@
   display: flex;
   gap: 30px;
 
+  @include xl-min {
+    // display: block;
+  }
+
   @include lg {
     display: block;
   }

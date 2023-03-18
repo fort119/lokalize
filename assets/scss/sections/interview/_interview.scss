@@ -1,0 +1,7 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.interview {
+  background-color: $color-bg-secondary-1;
+  padding: 54px 0 103px;
+}

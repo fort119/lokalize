@@ -1,0 +1,14 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.interview__inner {
+  display: flex;
+  gap: 90px;
+
+  @include lg {
+    flex-direction: column-reverse;
+    gap: 30px;
+    align-items: center;
+  }
+
+}

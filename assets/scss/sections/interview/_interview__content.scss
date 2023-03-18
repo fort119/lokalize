@@ -1,0 +1,26 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.interview__text {
+  margin: 10px 0;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 2.5rem;
+  margin-bottom: 28px;
+
+  @include lg-xx {
+    font-size: 25px;
+  }
+
+  @include md-min {
+    font-size: 25px;
+  }
+}
+
+.interview__person {
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  ;
+}
