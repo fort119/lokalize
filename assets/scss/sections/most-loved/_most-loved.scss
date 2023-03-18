@@ -1,0 +1,7 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.most-loved {
+  background-color: $color-bg-secondary-2;
+  padding: 80px 0 85px;
+}
