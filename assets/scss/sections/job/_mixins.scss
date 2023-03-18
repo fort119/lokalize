@@ -1,0 +1,104 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+@mixin job-item($dir: row) {
+  display: flex;
+
+  margin-bottom: 100px;
+
+  @include ul-min {
+    gap: 138px;
+  }
+
+  @include ul-lg {
+    gap: 80px;
+  }
+
+  @include lg {
+    gap: 40px;
+  }
+
+  @include md {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  @if ($dir ==row-reverse) {
+    flex-direction: $dir;
+  }
+
+  &__content {
+    display: flex;
+    flex-basis: 0;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+
+    gap: $gap-lg;
+  }
+
+  &__title {
+    margin: 0;
+
+    font-weight: 600;
+    line-height: 1.2;
+
+    @include xl-min {
+      font-size: 3.125rem; // 50px
+    }
+
+    @include xl-lg {
+      font-size: 2.75rem; // 44px
+    }
+
+    @include lg {
+      font-size: 2.25rem; // 36px
+    }
+  }
+
+  &__description {
+    margin: 0;
+
+    line-height: 1.5;
+
+    @include xl-min {
+      font-size: 1.25rem; // 20px
+    }
+
+    @include xl {
+      font-size: 1.125rem; // 18px
+    }
+  }
+
+  &__button {
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+
+  &__picture {
+    @include ul-min {
+      flex-basis: 632px;
+    }
+
+    @include ul {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+  }
+
+  &__image {
+    @include md-min {
+      width: 100%;
+    }
+
+    @include md-sm {
+      width: 70%;
+    }
+
+    @include sm {
+      width: 100%;
+    }
+  }
+}

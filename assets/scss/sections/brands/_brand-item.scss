@@ -1,0 +1,12 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.brand-item {
+  text-align: center;
+
+  @include lg {
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+}
