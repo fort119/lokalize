@@ -4,4 +4,8 @@
 .boost__items {
   display: flex;
   gap: 30px;
+
+  @include lg {
+    display: block;
+  }
 }

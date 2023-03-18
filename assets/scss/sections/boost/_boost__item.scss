@@ -7,8 +7,15 @@
   max-width: 409px;
   gap: $gap;
 
+  @include lg {
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
   &-image {
     height: 201px;
+    margin-bottom: 15px;
   }
 
   &-caption {
@@ -21,6 +28,7 @@
     font-weight: 400;
     font-size: 20px;
     line-height: 1.85rem;
+    margin-bottom: 10px;
   }
 
   &-link {
