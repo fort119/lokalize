@@ -53,6 +53,26 @@
       min-height: 45px;
     }
   }
+
+  &--lg {
+    min-width: 193px;
+    min-height: 60px;
+
+    @include lg-xs {
+      min-width: 163px;
+      min-height: 50px;
+    }
+
+    @include xs {
+      min-width: 110px;
+      min-height: 35px;
+    }
+
+    @include md {
+      min-width: 120px;
+      min-height: 40px;
+    }
+  }
 }
 
 .visually-hidden {
