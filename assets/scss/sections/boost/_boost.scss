@@ -1,0 +1,25 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.boost {
+  padding: 148px 0 145px;
+
+  &__caption {
+    margin: 0 auto 90px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 600;
+
+    @include xl-min {
+      font-size: 3.125rem;
+    }
+
+    @include xl-lg {
+      font-size: 2.75rem;
+    }
+
+    @include lg {
+      font-size: 2.25rem;
+    }
+  }
+}

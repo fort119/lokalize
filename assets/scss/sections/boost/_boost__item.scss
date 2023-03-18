@@ -1,0 +1,31 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.boost__item {
+  display: flex;
+  flex-direction: column;
+  max-width: 409px;
+  gap: $gap;
+
+  &-image {
+    height: 201px;
+  }
+
+  &-caption {
+    font-weight: 600;
+    font-size: 30px;
+    margin: 0;
+  }
+
+  &-descr {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.85rem;
+  }
+
+  &-link {
+    font-weight: 400;
+    font-size: 20px;
+    border-bottom: 1px solid $color-primary;
+  }
+}
