@@ -1,0 +1,22 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.ability__grid-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.ability__item-caption {
+  font-weight: 600;
+  font-size: 25px;
+  margin: 0;
+}
+
+.ability__item-descr {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 0;
+}

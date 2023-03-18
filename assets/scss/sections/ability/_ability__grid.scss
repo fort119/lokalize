@@ -1,0 +1,22 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.ability__grid {
+  display: grid;
+  grid-template-columns: 330px 330px 330px;
+  column-gap: 110px;
+  row-gap: 75px;
+  justify-content: space-evenly;
+
+  @include xl-min {
+    // display: block;
+  }
+
+  @include xl-lg {
+    grid-template-columns: 250px 250px;
+  }
+
+  @include lg {
+    grid-template-columns: 250px;
+  }
+}

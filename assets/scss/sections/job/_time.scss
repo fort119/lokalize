@@ -2,6 +2,6 @@
 @use "../../mixins" as *;
 @use "mixins" as *;
 
-.quality {
-  @include job-item;
+.time {
+  @include job-item(row-reverse);
 }
