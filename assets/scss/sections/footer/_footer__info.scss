@@ -1,0 +1,43 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+
+.footer__info {
+  display: flex;
+  gap: 34px;
+
+  @include ul {
+    flex-wrap: wrap;
+  }
+
+  @include lg {
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 892px) {
+    justify-content: center;
+  }
+
+  @include xs {
+    gap: 40px;
+  }
+
+  &-item {
+    width: 187px;
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+  }
+
+  &-caption {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 0 0 9px 0;
+  }
+
+  &-link {
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+  }
+}

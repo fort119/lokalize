@@ -1,0 +1,33 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.footer__studies {
+  max-width: 300px;
+}
+
+.footer__caption {
+  margin: 0 0 28px 0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 3.125rem;
+}
+
+.footer__content-image {
+  margin-bottom: 31px;
+}
+
+.footer__content-logo {
+  margin-bottom: 6px;
+}
+
+.footer__content-text {
+  margin: 0 0 17px 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.875rem;
+}
+
+.footer__content-link {
+  font-weight: 600;
+  font-size: 20px;
+}
